@@ -1,0 +1,14 @@
+title: Justine's Case
+description: "I love puns, just in case you haven't noticed."
+baseurl: ''
+author: 'Justine Kuo'
+url: 'https://github.com/fishkuo'
+email: fishkuo0101@gmail.com
+github_username: fishkuo
+linkedin_username: Szu-Yu Kuo
+theme: jekyll-theme-clean-blog
+paginate: 5
+paginate_path: 'page:num'
+plugins:
+  - jekyll-feed
+  - jekyll-paginate

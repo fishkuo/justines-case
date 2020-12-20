@@ -1,0 +1,17 @@
+{
+	"folders": [
+		{
+			"name": "justinescase",
+			"path": "../../justinescase"
+		},
+		{
+			"name": "_site",
+			"path": "../../justinescase/_site"
+		},
+		{
+			"name": "fishkuo.github.io",
+			"path": ".."
+		}
+	],
+	"settings": {}
+}
