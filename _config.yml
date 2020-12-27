@@ -7,6 +7,7 @@ email: fishkuo0101@gmail.com
 github_username: fishkuo
 linkedin_username: Szu-Yu Kuo
 theme: jekyll-theme-clean-blog
+timezone: Asia/Taipei
 paginate: 5
 paginate_path: 'page:num'
 plugins:
