@@ -56,9 +56,9 @@ layout: default
 						<div class="mx-auto">
 							<div class="pagination">
 								{% if paginator.previous_page %}
-								<a href="{{ paginator.previous_page_path | relative_url }}">&laquo;&nbsp;&nbsp; Prev&nbsp;&nbsp;</a>
+								<a href="{{ paginator.previous_page_path | relative_url }}">&laquo;&nbsp;&nbsp;上一頁&nbsp;&nbsp;</a>
 								{% else %}
-								<span>&laquo; &nbsp;&nbsp;Prev&nbsp;&nbsp;</span>
+								<span>&laquo; &nbsp;&nbsp;上一頁&nbsp;&nbsp;</span>
 								{% endif %} {% for page in (1..paginator.total_pages) %} {% if page == paginator.page %}
 								<em>{{ page }}&nbsp;&nbsp;&nbsp;</em>
 								{% elsif page == 1 %}
@@ -66,9 +66,9 @@ layout: default
 								{% else %}
 								<a href="{{ site.paginate_path | relative_url | replace: ':num', page }}">{{ page }}</a>
 								{% endif %} {% endfor %} {% if paginator.next_page %}
-								<a href="{{ paginator.next_page_path | relative_url }}">&nbsp;&nbsp;Next&nbsp;&nbsp; &raquo;</a>
+								<a href="{{ paginator.next_page_path | relative_url }}">&nbsp;&nbsp;下一頁&nbsp;&nbsp; &raquo;</a>
 								{% else %}
-								<span>&nbsp;&nbsp;Next&nbsp;&nbsp; &raquo;</span>
+								<span>&nbsp;&nbsp;下一頁&nbsp;&nbsp; &raquo;</span>
 								{% endif %}
 							</div>
 						</div>
