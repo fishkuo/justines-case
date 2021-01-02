@@ -51,24 +51,24 @@ layout: default
 				{% endfor %}
 				<!-- This loops through the paginated posts -->
 				{% if paginator.total_pages > 1 %}
-				<div class="container">
-					<div class="row">
+				<div class="container ">
+					<div class="row align-items-center">
 						<div class="mx-auto">
 							<div class="pagination">
 								{% if paginator.previous_page %}
-								<a href="{{ paginator.previous_page_path | relative_url }}">&laquo;&nbsp;&nbsp;上一頁&nbsp;&nbsp;</a>
+								<a href="{{ paginator.previous_page_path | relative_url }}" class="btn btn-outline-secondary rounded ">上一頁</a>
 								{% else %}
-								<span>&laquo; &nbsp;&nbsp;上一頁&nbsp;&nbsp;</span>
+								<a class="btn btn-outline-secondary rounded ">上一頁</a>
 								{% endif %} {% for page in (1..paginator.total_pages) %} {% if page == paginator.page %}
-								<em>{{ page }}&nbsp;&nbsp;&nbsp;</em>
+								<a class="mx-3 align-self-center text-muted">{{ page }}</a>
 								{% elsif page == 1 %}
-								<a href="{{ '/' | relative_url }}">{{ page }}&nbsp;&nbsp;</a>
+								<a href="{{ '/' | relative_url }}" class="mx-3 align-self-center">{{ page }}</a>
 								{% else %}
-								<a href="{{ site.paginate_path | relative_url | replace: ':num', page }}">{{ page }}</a>
+								<a href="{{ site.paginate_path | relative_url | replace: ':num', page }} " class="mx-3 align-self-center">{{ page }}</a>
 								{% endif %} {% endfor %} {% if paginator.next_page %}
-								<a href="{{ paginator.next_page_path | relative_url }}">&nbsp;&nbsp;下一頁&nbsp;&nbsp; &raquo;</a>
+								<a href="{{ paginator.next_page_path | relative_url }}" class="btn btn-outline-secondary rounded ">下一頁</a>
 								{% else %}
-								<span>&nbsp;&nbsp;下一頁&nbsp;&nbsp; &raquo;</span>
+								<a class="btn btn-outline-secondary rounded ">下一頁</a>
 								{% endif %}
 							</div>
 						</div>

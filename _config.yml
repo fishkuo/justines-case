@@ -13,5 +13,6 @@ paginate_path: 'page:num'
 plugins:
   - jekyll-feed
   - jekyll-paginate
-markdown: kramdown
-highlighter: rouge
+kramdown:
+  syntax_highlighter: rouge
+  input: GFM
