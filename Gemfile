@@ -20,6 +20,7 @@ group :jekyll_plugins do
   gem "jekyll-sitemap"
   gem "jekyll-admin"
   gem "jekyll-theme-clean-blog"
+  gem 'rouge', '~> 3.26'
 end
 
 # Windows and JRuby does not include zoneinfo files, so bundle the tzinfo-data gem
