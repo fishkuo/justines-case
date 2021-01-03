@@ -18,7 +18,7 @@ group :jekyll_plugins do
   gem "jekyll-paginate"
   gem "jekyll-feed", "~> 0.12"
   gem "jekyll-sitemap"
-  gem 'jekyll_picture_tag', '~> 1'
+  gem 'jekyll_picture_tag'
   gem "jekyll-admin"
   gem "jekyll-theme-clean-blog"
   gem 'kramdown'
