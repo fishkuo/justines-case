@@ -22,6 +22,7 @@ group :jekyll_plugins do
   gem "jekyll-theme-clean-blog"
   gem 'kramdown'
   gem 'rouge', '~> 3.26'
+  gem 'jekyll-seo-tag', '~> 2.6', '>= 2.6.1'
 end
 
 # Windows and JRuby does not include zoneinfo files, so bundle the tzinfo-data gem
